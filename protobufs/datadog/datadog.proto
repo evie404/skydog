@@ -13,17 +13,25 @@ message Board {
 
   string description = 5;
 
-  // repeated TemplateVarible template_variables = 6;
-
   bool is_read_only = 6;
 
   repeated string notify_list = 7;
 
-  string author_handle = 8;
+  repeated TemplateVariable template_variables = 8;
 
-  string url = 9;
+  string author_handle = 9;
 
-  string created_at = 10;
+  string url = 10;
 
-  string modified_at = 11;
+  string created_at = 11;
+
+  string modified_at = 12;
+}
+
+message TemplateVariable {
+  string name = 1;
+
+  string default = 2;
+
+  string prefix = 3;
 }
