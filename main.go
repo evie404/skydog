@@ -2,7 +2,9 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"log"
 
 	_ "github.com/rickypai/stardog/protobufs/datadog"
 	"github.com/stripe/skycfg"
@@ -18,7 +20,11 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	for _, msg := range messages {
-		fmt.Printf("%s\n", msg.String())
+
+	j, err := json.MarshalIndent(messages, "", "  ")
+	if err != nil {
+		log.Fatal(err)
 	}
+
+	fmt.Println(string(j))
 }
