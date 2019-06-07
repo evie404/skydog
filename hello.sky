@@ -9,9 +9,9 @@ def main(ctx):
                 datadog.Widget(
                     id = "widget 123",
                     definition = datadog.WidgetDefinition(
-                      alert_graph = datadog.AlertGraph(
-                        alert_id = "alert 12345",
-                      ),
+                        alert_graph = datadog.AlertGraph(
+                            alert_id = "alert 12345",
+                        ),
                     ),
                 ),
             ],
