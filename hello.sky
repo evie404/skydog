@@ -1,13 +1,17 @@
 datadog = proto.package("datadog")
 
 def main(ctx):
-  return [datadog.Board(
-    title = "Hello, world!",
-    id = "123",
-    template_variables = [datadog.TemplateVariable(
-      name = "lol",
-    ),
-    datadog.TemplateVariable(
-      name = "lol",
-    )],
-  )]
+    return [
+        datadog.Board(
+            title = "Hello, world!",
+            id = "123",
+            template_variables = [
+                datadog.TemplateVariable(
+                    name = "lol",
+                ),
+                datadog.TemplateVariable(
+                    name = "lol",
+                ),
+            ],
+        ),
+    ]
