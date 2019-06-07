@@ -7,6 +7,7 @@ def main(ctx):
             id = "123",
             widgets = [
                 datadog.Widget(
+                    id = "widget 123",
                     definition = datadog.WidgetDefinition(
                       alert_graph = datadog.AlertGraph(),
                     ),
