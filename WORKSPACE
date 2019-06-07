@@ -73,3 +73,21 @@ load(
 )
 
 _go_image_repos()
+
+go_repository(
+    name = "com_github_stripe_skycfg",
+    commit = "80fe5c6480773463ac32f81613e210c5db45c3f4",
+    importpath = "github.com/stripe/skycfg",
+)
+
+go_repository(
+    name = "in_gopkg_yaml_v2",
+    commit = "7b8349ac747c6a24702b762d2c4fd9266cf4f1d6",
+    importpath = "gopkg.in/yaml.v2",
+)
+
+go_repository(
+    name = "net_starlark_go",
+    commit = "854ab5fc397e48ac689f94c4084e4b1842ef3c46",
+    importpath = "go.starlark.net",
+)
