@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	_ "github.com/golang/protobuf/ptypes/wrappers"
+	_ "github.com/rickypai/stardog/protobufs/datadog"
 	"github.com/stripe/skycfg"
 )
 

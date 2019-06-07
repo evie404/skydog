@@ -28,14 +28,14 @@ go_library(
     importpath = "github.com/rickypai/stardog",
     visibility = ["//visibility:private"],
     deps = [
+        "//protobufs/datadog:go_default_library",
         "@com_github_stripe_skycfg//:go_default_library",
-        "@io_bazel_rules_go//proto/wkt:wrappers_go_proto",
     ],
 )
 
 go_binary(
     name = "stardog",
-    embed = [":go_default_library"],
     data = ["hello.sky"],
+    embed = [":go_default_library"],
     visibility = ["//visibility:public"],
 )

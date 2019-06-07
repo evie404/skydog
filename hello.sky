@@ -1,4 +1,7 @@
-pb = proto.package("google.protobuf")
+datadog = proto.package("datadog")
 
 def main(ctx):
-  return [pb.StringValue(value = "Hello, world!")]
+  return [datadog.Board(
+    title = "Hello, world!",
+    id = "123",
+  )]
