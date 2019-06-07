@@ -88,6 +88,6 @@ go_repository(
 
 go_repository(
     name = "net_starlark_go",
-    commit = "854ab5fc397e48ac689f94c4084e4b1842ef3c46",
+    commit = "24246af8ff5f56427b506403ba62aadbcf5413a0",
     importpath = "go.starlark.net",
 )

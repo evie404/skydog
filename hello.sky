@@ -1,0 +1,4 @@
+pb = proto.package("google.protobuf")
+
+def main(ctx):
+  return [pb.StringValue(value = "Hello, world!")]
