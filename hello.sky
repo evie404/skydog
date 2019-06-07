@@ -5,6 +5,11 @@ def main(ctx):
         datadog.Board(
             title = "Hello, world!",
             id = "123",
+            widgets = [
+                datadog.Widget(
+                    definition = datadog.AlertGraph(),
+                ),
+            ],
             template_variables = [
                 datadog.TemplateVariable(
                     name = "lol",

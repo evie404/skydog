@@ -5,7 +5,7 @@ package datadog;
 message Board {
   string title = 1;
 
-  // repeated Widget widgets = 2;
+  repeated Widget widgets = 2;
 
   string layout_type = 3;
 
@@ -27,6 +27,40 @@ message Board {
 
   string modified_at = 12;
 }
+
+message Widget {
+  oneof definition {
+    AlertGraph alert_graph = 1;
+    AlertValue alert_value = 2;
+  }
+}
+
+message AlertGraph {
+  string type = 1;
+
+  string alert_id = 2;
+
+  string viz_type = 3;
+
+  string title = 4;
+}
+
+message AlertValue {
+  string type = 1;
+
+  string alert_id = 2;
+
+  int32 precision = 3;
+
+  string unit = 4;
+
+  string text_size = 5;
+
+  string text_align = 6;
+
+  string title = 7;
+}
+
 
 message TemplateVariable {
   string name = 1;
