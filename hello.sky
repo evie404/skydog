@@ -7,7 +7,9 @@ def main(ctx):
             id = "123",
             widgets = [
                 datadog.Widget(
-                    definition = datadog.AlertGraph(),
+                    definition = datadog.WidgetDefinition(
+                      alert_graph = datadog.AlertGraph(),
+                    ),
                 ),
             ],
             template_variables = [

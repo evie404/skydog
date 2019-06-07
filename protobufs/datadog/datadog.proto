@@ -29,6 +29,12 @@ message Board {
 }
 
 message Widget {
+  WidgetDefinition definition = 1;
+
+  string id = 2;
+}
+
+message WidgetDefinition {
   oneof definition {
     AlertGraph alert_graph = 1;
     AlertValue alert_value = 2;
