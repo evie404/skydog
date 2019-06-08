@@ -88,7 +88,32 @@ message AlertValue {
 }
 
 message Change {
+  string type = 1;
 
+  string title = 2;
+
+  repeated Request requests = 3;
+
+  message Request {
+    string change_type = 1;
+
+    string compare_to = 2;
+
+    bool increase_good = 3;
+
+    string order_by = 4;
+
+    string order_dir = 5;
+
+    bool show_present = 6;
+
+    oneof query {
+      string q = 1001;
+      string apm_query = 1002;
+      string log_query = 1003;
+      string process_query = 1004;
+    }
+  }
 }
 
 message CheckStatus {
