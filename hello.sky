@@ -14,6 +14,18 @@ def main(ctx):
                         ),
                     ),
                 ),
+                datadog.Widget(
+                    id = "widget 234",
+                    definition = datadog.WidgetDefinition(
+                        timeseries = datadog.Timeseries(
+                            requests = [
+                                datadog.Timeseries.Request(
+                                    q = "test",
+                                ),
+                            ],
+                        ),
+                    ),
+                ),
             ],
             template_variables = [
                 datadog.TemplateVariable(
