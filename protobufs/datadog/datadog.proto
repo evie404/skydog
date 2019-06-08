@@ -44,29 +44,28 @@ message WidgetDefinition {
 message AlertGraph {
   string type = 1;
 
-  string alert_id = 2;
+  string title = 2;
 
-  string viz_type = 3;
+  string alert_id = 3;
 
-  string title = 4;
+  string viz_type = 4;
 }
 
 message AlertValue {
   string type = 1;
 
-  string alert_id = 2;
+  string title = 2;
 
-  int32 precision = 3;
+  string alert_id = 3;
 
-  string unit = 4;
+  int32 precision = 4;
 
-  string text_size = 5;
+  string unit = 5;
 
-  string text_align = 6;
+  string text_size = 6;
 
-  string title = 7;
+  string text_align = 7;
 }
-
 
 message TemplateVariable {
   string name = 1;
