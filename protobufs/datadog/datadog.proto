@@ -185,10 +185,31 @@ message ServiceSummary {
 }
 
 message Timeseries {
+  string type = 1;
 
+  string title = 2;
+
+  repeated Request requests = 3;
+
+  message Request {
+    repeated WidgetConditionalFormat conditional_formats = 1;
+
+    string style = 2;
+
+    oneof query {
+      string q = 1001;
+      string apm_query = 1002;
+      string log_query = 1003;
+      string process_query = 1004;
+    }
+  }
 }
 
 message TopList {
+
+}
+
+message WidgetConditionalFormat {
 
 }
 
