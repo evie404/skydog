@@ -38,6 +38,26 @@ message WidgetDefinition {
   oneof definition {
     AlertGraph alert_graph = 1;
     AlertValue alert_value = 2;
+    Change change = 3;
+    CheckStatus check_status = 4;
+    Distribution distribution = 5;
+    EventStream event_stream = 6;
+    EventTimeline event_timeline = 7;
+    FreeText free_text = 8;
+    Group group = 9;
+    HeatMap heat_map = 10;
+    Hostmap hostmap = 11;
+    Iframe iframe = 12;
+    Image image = 13;
+    LogStream log_stream = 14;
+    MonitorSummary monitor_summary = 15;
+    Note note = 16;
+    QueryValue query_value = 17;
+    ScatterPlot scatter_plot = 18;
+    ServiceMap service_map = 19;
+    ServiceSummary service_summary = 20;
+    Timeseries timeseries = 21;
+    TopList top_list = 22;
   }
 }
 
@@ -65,6 +85,86 @@ message AlertValue {
   string text_size = 6;
 
   string text_align = 7;
+}
+
+message Change {
+
+}
+
+message CheckStatus {
+
+}
+
+message Distribution {
+
+}
+
+message EventStream {
+
+}
+
+message EventTimeline {
+
+}
+
+message FreeText {
+
+}
+
+message Group {
+
+}
+
+message HeatMap {
+
+}
+
+message Hostmap {
+
+}
+
+message Iframe {
+
+}
+
+message Image {
+
+}
+
+message LogStream {
+
+}
+
+message MonitorSummary {
+
+}
+
+message Note {
+
+}
+
+message QueryValue {
+
+}
+
+message ScatterPlot {
+
+}
+
+message ServiceMap {
+
+}
+
+message ServiceSummary {
+
+}
+
+message Timeseries {
+
+}
+
+message TopList {
+
 }
 
 message TemplateVariable {
