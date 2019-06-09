@@ -1,1 +1,1 @@
-GO_PREFIX = "github.com/rickypai/stardog"
+GO_PREFIX = "github.com/rickypai/skydog"

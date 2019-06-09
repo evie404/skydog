@@ -17,4 +17,4 @@
 /bazel-*
 
 # Built-Binaries
-/stardog
+/skydog

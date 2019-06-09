@@ -25,7 +25,7 @@ goimports(
 go_library(
     name = "go_default_library",
     srcs = ["main.go"],
-    importpath = "github.com/rickypai/stardog",
+    importpath = "github.com/rickypai/skydog",
     visibility = ["//visibility:private"],
     deps = [
         "//protobufs/datadog:go_default_library",
@@ -34,7 +34,7 @@ go_library(
 )
 
 go_binary(
-    name = "stardog",
+    name = "skydog",
     data = ["hello.sky"],
     embed = [":go_default_library"],
     visibility = ["//visibility:public"],

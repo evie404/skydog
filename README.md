@@ -1,4 +1,4 @@
-# stardog
+# skydog
 
 This is a boilerplate for starting a Golang project in Bazel. I use it for my personal Golang projects.
 

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	_ "github.com/rickypai/stardog/protobufs/datadog"
+	_ "github.com/rickypai/skydog/protobufs/datadog"
 	"github.com/stripe/skycfg"
 )
 

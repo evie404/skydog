@@ -9,7 +9,7 @@ proto_library(
 
 go_proto_library(
     name = "datadog_go_proto",
-    importpath = "github.com/rickypai/stardog/protobufs/datadog",
+    importpath = "github.com/rickypai/skydog/protobufs/datadog",
     proto = ":datadog_proto",
     visibility = ["//visibility:public"],
 )
@@ -17,6 +17,6 @@ go_proto_library(
 go_library(
     name = "go_default_library",
     embed = [":datadog_go_proto"],
-    importpath = "github.com/rickypai/stardog/protobufs/datadog",
+    importpath = "github.com/rickypai/skydog/protobufs/datadog",
     visibility = ["//visibility:public"],
 )
