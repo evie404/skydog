@@ -58,6 +58,7 @@ message WidgetDefinition {
     ServiceSummary service_summary = 20;
     Timeseries timeseries = 21;
     TopList top_list = 22;
+    Table table = 23;
   }
 }
 
@@ -181,6 +182,10 @@ message ServiceMap {
 }
 
 message ServiceSummary {
+
+}
+
+message Table {
 
 }
 
