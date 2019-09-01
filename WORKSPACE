@@ -108,3 +108,9 @@ go_repository(
     commit = "24246af8ff5f56427b506403ba62aadbcf5413a0",
     importpath = "go.starlark.net",
 )
+
+go_repository(
+    name = "com_github_zorkian_go_datadog_api",
+    commit = "5f6a486f4345634ed789aa21bab35c924387df55",
+    importpath = "github.com/zorkian/go-datadog-api",
+)
