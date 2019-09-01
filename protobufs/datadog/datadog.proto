@@ -69,7 +69,13 @@ message AlertGraph {
 
   string alert_id = 3;
 
-  string viz_type = 4;
+  VizType viz_type = 4;
+
+  enum VizType {
+    UNKNOWN = 0;
+    TIMESERIES = 1;
+    TOPLIST = 2;
+  }
 }
 
 message AlertValue {
@@ -85,7 +91,14 @@ message AlertValue {
 
   string text_size = 6;
 
-  string text_align = 7;
+  TextAlign text_align = 7;
+
+  enum TextAlign {
+    UNKNOWN = 0;
+    LEFT = 1;
+    CENTER = 2;
+    RIGHT = 3;
+  }
 }
 
 message Change {
@@ -96,15 +109,43 @@ message Change {
   repeated Request requests = 3;
 
   message Request {
-    string change_type = 1;
+    ChangeType change_type = 1;
 
-    string compare_to = 2;
+    enum ChangeType {
+      CHANGE_TYPE_UNKNOWN = 0;
+      ABSOLUTE = 1;
+      RELATIVE = 2;
+    }
+
+    CompareTo compare_to = 2;
+
+    enum CompareTo {
+      COMPARE_TO_UNKNOWN = 0;
+      HOUR_BEFORE = 1;
+      DAY_BEFORE = 2;
+      WEEK_BEFORE = 3;
+      MONTH_BEFORE = 4;
+    }
 
     bool increase_good = 3;
 
-    string order_by = 4;
+    OrderBy order_by = 4;
 
-    string order_dir = 5;
+    enum OrderBy {
+      ORDER_BY_UNKNOWN = 0;
+      CHANGE = 1;
+      NAME = 2;
+      PRESENT = 3;
+      PAST = 4;
+    }
+
+    OrderDIR order_dir = 5;
+
+    enum OrderDIR {
+      ORDER_DIR_UNKNOWN = 0;
+      ASC = 1;
+      DESC = 2;
+    }
 
     bool show_present = 6;
 
