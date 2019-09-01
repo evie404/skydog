@@ -118,75 +118,111 @@ message Change {
 }
 
 message CheckStatus {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Distribution {
+  string type = 1;
 
+  string title = 2;
 }
 
 message EventStream {
+  string type = 1;
 
+  string title = 2;
 }
 
 message EventTimeline {
+  string type = 1;
 
+  string title = 2;
 }
 
 message FreeText {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Group {
+  string type = 1;
 
+  string title = 2;
 }
 
 message HeatMap {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Hostmap {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Iframe {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Image {
+  string type = 1;
 
+  string title = 2;
 }
 
 message LogStream {
+  string type = 1;
 
+  string title = 2;
 }
 
 message MonitorSummary {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Note {
+  string type = 1;
 
+  string title = 2;
 }
 
 message QueryValue {
+  string type = 1;
 
+  string title = 2;
 }
 
 message ScatterPlot {
+  string type = 1;
 
+  string title = 2;
 }
 
 message ServiceMap {
+  string type = 1;
 
+  string title = 2;
 }
 
 message ServiceSummary {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Table {
+  string type = 1;
 
+  string title = 2;
 }
 
 message Timeseries {
